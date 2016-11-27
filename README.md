@@ -14,6 +14,57 @@
 ---
 
 
+## Usage
+
+First, install the package from npm registry: 
+```bash
+npm install --save eksisozluk
+```
+
+And then, use it in your project:
+```javascript
+const eksisozluk = require('eksisozluk');
+
+eksisozluk.entries.get(1, result => {
+  console.log(result);
+
+  /*{
+    status: 200,
+    data: {
+      author: 'ssg',
+      author_id: 8097,
+      author_url: 'https://eksisozluk.com/biri/ssg',
+      content: ' gitar calmak icin kullanilan minik plastik garip nesne. ',
+      content_encoded: 'gitar calmak icin kullanilan minik plastik garip nesne.',
+      date_created: '15.02.1999',
+      date_modified: null,
+      eksiseyler_link: 'https://seyler.eksisozluk.com/pena',
+      eksiseyler_slug: 'pena',
+      entry_id: 1,
+      favorite_count: 3603,
+      permalink: 'https://eksisozluk.com/entry/1',
+      title: 'pena',
+      title_id: 31782,
+      title_slug: 'pena',
+      title_url: 'https://eksisozluk.com//pena--31782'
+    }
+  }*/
+});
+
+eksisozluk.entries.get(2, result => {
+  console.log(result);
+
+  /*{
+    status: 404,
+    data: {
+      error: 'Not Found',
+      message: 'entry does not exist.'
+    }
+  }*/
+});
+```
+
+
 ## License
 
 GNU General Public Licence v3.0
