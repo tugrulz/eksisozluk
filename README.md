@@ -9,6 +9,8 @@
 > kutsal bilgi kaynağı
 
 [![build status](https://img.shields.io/travis/eksisozluk/eksisozluk.svg?style=flat-square)](https://travis-ci.org/eksisozluk/eksisozluk)
+[![david](https://img.shields.io/david/eksisozluk/eksisozluk.svg?style=flat-square)](https://david-dm.org/eksisozluk/eksisozluk)
+[![david dev](https://img.shields.io/david/dev/eksisozluk/eksisozluk.svg?style=flat-square)](https://david-dm.org/eksisozluk/eksisozluk)
 [![license](https://img.shields.io/github/license/eksisozluk/eksisozluk.svg?style=flat-square)](https://github.com/eksisozluk/eksisozluk)
 
 ---
