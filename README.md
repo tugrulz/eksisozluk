@@ -8,6 +8,7 @@
 
 > kutsal bilgi kaynağı
 
+[![build status](https://img.shields.io/travis/eksisozluk/eksisozluk.svg?style=flat-square)](https://travis-ci.org/eksisozluk/eksisozluk)
 [![license](https://img.shields.io/github/license/eksisozluk/eksisozluk.svg?style=flat-square)](https://github.com/eksisozluk/eksisozluk)
 
 ---
@@ -16,3 +17,8 @@
 ## License
 
 GNU General Public Licence v3.0
+
+
+## Disclaimer
+
+`ekşisözlük` name, its variations and the logo are registered trademarks of [ekşi teknoloji ve bilişim a.ş.](http://eksiteknoloji.com/)
