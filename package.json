@@ -18,11 +18,35 @@
   "bugs": {
     "url": "https://github.com/eksisozluk/eksisozluk/issues"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "xo"
+  },
+  "engines": {
+    "node": ">=6 <7",
+    "npm": ">=4"
+  },
   "keywords": [
     "ekşi",
     "sözlük"
   ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "rules": {
+      "new-cap": 0,
+      "brace-style": ["error", "stroustrup", {"allowSingleLine": true}]
+    },
+    "overrides": [
+      {
+        "files": "lib/**/get.js",
+        "rules": {
+          "camelcase": ["error", { "properties": "never"}]
+        }
+      }
+    ]
+  }
 }
