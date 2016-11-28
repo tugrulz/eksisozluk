@@ -1,6 +1,6 @@
 {
   "name": "eksisozluk",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "kutsal bilgi kaynağı",
   "homepage": "https://github.com/eksisozluk/eksisozluk",
   "author": {
@@ -30,7 +30,11 @@
     "ekşi",
     "sözlük"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  },
   "devDependencies": {
     "xo": "^0.17.1"
   },
@@ -39,13 +43,24 @@
     "space": 2,
     "rules": {
       "new-cap": 0,
-      "brace-style": ["error", "stroustrup", {"allowSingleLine": true}]
+      "brace-style": [
+        "error",
+        "stroustrup",
+        {
+          "allowSingleLine": true
+        }
+      ]
     },
     "overrides": [
       {
         "files": "lib/**/get.js",
         "rules": {
-          "camelcase": ["error", { "properties": "never"}]
+          "camelcase": [
+            "error",
+            {
+              "properties": "never"
+            }
+          ]
         }
       }
     ]
