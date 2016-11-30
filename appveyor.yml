@@ -1,0 +1,24 @@
+# eksisozluk/eksisozluk
+
+environment:
+  matrix:
+    - nodejs_version: "4.0"
+    - nodejs_version: "6.0"
+
+init:
+  - git config --global core.autocrlf true
+
+shallow_clone: true
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install -g npm
+  - npm install -g xo
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+build: off
